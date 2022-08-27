@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Carousel 01</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+<link rel="stylesheet" href="css/style.css">
+<head>
+
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+button{
+font-family: 'Mochiy Pop One', sans-serif;
+}
+
+@media (min-width: 280px) and (max-width:600px) {
+        .btn{
+            margin-left: 40px;
+           
+        }}
+</style>
+</head>
+</head>
+<body>
+
+
+
+
+
+<div class="home-slider owl-carousel js-fullheight">
+<div class="slider-item js-fullheight" style="background-image:url(./images/66.jpg);">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+<div class="col-md-12 ftco-animate">
+<div class="text w-100 text-center">
+<h2>EMPLOYEE EVALUATION</h2>
+<h1 class="mb-3">Personal Evaluation</h1>
+<div class="d-grid gap-2">
+
+<button type="submit" onclick="valid()" style="background-color:#1c1916;"
+class="btn  btn-block"> <a href = "login.html" style="text-decoration: none; color: white;">log
+in </a></button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="slider-item js-fullheight" style="background-image:url(./images/55.jpg);">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+<div class="col-md-12 ftco-animate">
+<div class="text w-100 text-center">
+<h2>EMPLOYEE EVALUATION</h2>
+<h1 class="mb-3">Professional Evaluation</h1>
+<button type="submit" onclick="valid()" style="background-color:#1c1916;"
+class="btn  btn-block"><a href = "login.html" style= "color: white;text-align: center;">log
+in</a></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="slider-item js-fullheight" style="background-image:url(./images/44.jpg);">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+<div class="col-md-12 ftco-animate">
+<div class="text w-100 text-center">
+<h2>employee evaluation</h2>
+<h1 class="mb-3">Technical Evaluation</h1>
+<button type="submit" onclick="valid()" style="background-color:#1c1916;"
+class="btn  btn-block"><a href = "login.html" style="text-decoration: none; color: white;">log
+in </a></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="slider-item js-fullheight" style="background-image:url(./images/33.jpg);">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+<div class="col-md-12 ftco-animate">
+<div class="text w-100 text-center">
+<h2>EMPLOYEE EVALUATION</h2>
+<h1 class="mb-3">Personal Evaluation</h1>
+<button type="submit" onclick="valid()" style="background-color:#1c1916;"
+class="btn  btn-block"><a href = "login.html" style="text-decoration: none; color: white;">log
+in </a></button></button></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="slider-item js-fullheight" style="background-image:url(./images/r.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+    <div class="col-md-12 ftco-animate">
+    <div class="text w-100 text-center">
+    <h2>EMPLOYEE EVALUATION</h2>
+    <h1 class="mb-3">Professional Evaluation</h1>
+    <button type="submit" onclick="valid()" style="background-color:#1c1916;"
+    class="btn  btn-block">log
+    in</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    
+<div class="slider-item js-fullheight" style="background-image:url(./images/s.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+    <div class="col-md-12 ftco-animate">
+    <div class="text w-100 text-center">
+    <h2>EMPLOYEE EVALUATION</h2>
+    <h1 class="mb-3">Technical Evaluation</h1>
+    <button type="submit" onclick="valid()" style="background-color:#1c1916;"
+    class="btn  btn-block">log
+    in</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+
+(function($) {
+
+"use strict";
+
+var fullHeight = function() {
+
+$('.js-fullheight').css('height', $(window).height());
+$(window).resize(function(){
+$('.js-fullheight').css('height', $(window).height());
+});
+
+};
+fullHeight();
+
+var carousel = function() {
+$('.home-slider').owlCarousel({
+loop:true,
+autoplay: true,
+margin:0,
+animateOut: 'fadeOut',
+animateIn: 'fadeIn',
+nav:true,
+dots: true,
+autoplayHoverPause: false,
+items: 1,
+navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+responsive:{
+0:{
+items:1
+},
+600:{
+items:1
+},
+1000:{
+items:1
+}
+}
+});
+
+};
+carousel();
+
+})(jQuery);
+
+
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

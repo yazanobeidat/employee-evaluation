@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        report
+    </title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/report.css">
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+ <!-- coding navbar -->
+ <nav class="navbar navbar-expand-sm navbar-dark bg-dark " style="padding-left: 50px ; background-color: #fff; position: fixed;width: 100%;">
+    <div style="padding-left:20px ; padding-right:50px ;">
+        <img src="./images/hr.png" alt="" height="50px" width="100%">
+    </div>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav">
+            <li class="nav-item" style="padding-right:30px ;">
+                <a href="land.html" class="nav-link">Home</a>
+            </li>
+          
+            <li class="nav-item">
+                <a href="login.html" class="nav-link" style="padding-right:30px ;">Login </a>
+            </li>
+            <li class="nav-item">
+                <a href="sign-up.html" class="nav-link">Sign up </a>
+            </li>
+            <li class="nav-item" style="padding-right:30px ;">
+                <a href="eva.html" class="nav-link">Evaluation</a>
+            </li>
+            <li class="nav-item" style="padding-right:30px ;">
+                <a href="report_new.html" class="nav-link">Report</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+
+    <!-- Create Form -->
+    <form id="form">
+        <h1 style="margin-top: 80px;"> Evaluation Report </h1>
+        <!-- <p id="test"  style="display:none ;" >recommend to Let others help you , Ask for feedback from colleagues , Prove you are reliable</p> -->
+
+        <div class="box">
+            <select id="name" onchange="eva()">
+
+                <option>Select Name </option>
+                <option>Basel Nemer</option>
+                <option>Abdullah Alaroud</option>
+                <option>Nancy Ali</option>
+                <option>Bayan abu-alroos</option>
+                <option>yazan obiadat</option>
+            </select>
+
+
+        </div>
+
+
+
+
+
+        <div id="p1_text" class="personal">
+
+            <h3> Personal Report</h3>
+
+            <div class="form-control" id="form-control1">
+                <p>Team Work Skills</p>
+                <label class="excellentq1">
+                    <p id="excellentq1" style="display:none ;">You've an Excellent Team work skills , Keep Going</p>
+                </label>
+                <label class="goodq1">
+                    <p id="goodq1" style="display:none ;">You've a Good Team work skills, Develop this skill more</p>
+                </label>
+                <label class="poorq1">
+                    <p id="poorq1" style="display:none ;">recommend to Let others help you , Ask for feedback from
+                        colleagues , Prove you are reliable</p>
+
+                </label>
+
+            </div>
+
+
+
+
+
+            <div class="form-control">
+                <p>Communication Skills</p>
+                <label class="excellentq2">
+                    <p id="excellentq2" style="display:none ;">You've an Excellent Communication skills , Keep Going</p>
+                </label>
+                <label class="goodq2">
+                    <p id="goodq2" style="display:none ;">You've a Good Communication skills, Develop this skill more
+                    </p>
+                </label>
+                <label class="poorq2">
+                    <p id="poorq2" style="display:none ;"> recommend be brief, LISTEN, focus on your body language</p>
+
+                </label>
+                <!-- <div class="form-control">
+            <label class="excellentq2">
+                Keep Going
+                </label>
+                <label class="goodq2">
+                   Good
+                    </label>
+            <label class="poorq2">
+            recommend be brief, LISTEN, focus on your body language
+            </label> -->
+            </div>
+
+
+            <div class="form-control">
+                <p>Time Management Skills</p>
+                <label class="excellentq3">
+                    <p id="excellentq3" style="display:none ;">You've an Excellent Time Management Skills , Keep Going
+                    </p>
+                </label>
+                <label class="goodq3">
+                    <p id="goodq3" style="display:none ;">You've a Good Time Management Skills, Develop this skill more
+                    </p>
+                </label>
+                <label class="poorq3">
+                    <p id="poorq3" style="display:none ;"> recommend to Prioritize your to do list ,Work without
+                        interruptions</p>
+
+                </label>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="professional">
+            <h3>Professional Report</h3>
+
+
+
+
+
+            <div class="form-control" id="form-control2">
+                <p>KPI (Keep Performance Indicator)</p>
+                <label class="excellentq4">
+                    <p id="excellentq4" style="display:none ;">You've an Excellent KPI , Keep Going</p>
+                </label>
+                <label class="goodq4">
+                    <p id="goodq4" style="display:none ;">You've a Good KPI, Develop this skill more</p>
+                </label>
+                <label class="poorq4">
+                    <p id="poorq4" style="display:none ;"> Take at least one UX course, Learn to sketch ,Try Some New
+                        Tools</p>
+                </label>
+
+
+
+            </div>
+
+            <div class="form-control">
+                <p>Quality of tasks</p>
+                <label class="excellentq5">
+                    <p id="excellentq5" style="display:none ;">You've an Excellent Quality of tasks skill , Keep Going
+                    </p>
+                </label>
+                <label class="goodq5">
+                    <p id="goodq5" style="display:none ;">You've a Good Quality of tasks skill, Develop this skill more
+                    </p>
+                </label>
+                <label class="poorq5">
+                    <p id="poorq5" style="display:none ;"> you've Understand what is expected of you ,Map out your
+                        priorities,Reduce distractions</p>
+                </label>
+
+
+
+
+
+            </div>
+
+            <div class="form-control">
+                <p>Initiativity</p>
+                <label class="excellentq6">
+                    <p id="excellentq6" style="display:none ;">You've an Excellent Initiativity , Keep Going</p>
+                </label>
+                <label class="goodq6">
+                    <p id="goodq6" style="display:none ;">You've a Good Initiativity, Develop this skill more</p>
+                </label>
+                <label class="poorq6">
+                    <p id="poorq6" style="display:none ;"> Makes it easier to detect errors, Enables the creation of
+                        reusable code,Make code simpler, more readable, and easier to maintain</p>
+                </label>
+
+
+            </div>
+        </div>
+
+
+        <div class="technical">
+
+            <h3>Technical Report</h3>
+
+            <div class="form-control" id="form-control3">
+                <p>UI / UX</p>
+                <label class="excellentq7">
+                    <p id="excellentq7" style="display:none ;">You've an Excellent knowldege in UI/UX, Keep Going</p>
+                </label>
+                <label class="goodq7">
+                    <p id="goodq7" style="display:none ;">You've a Good knowldege in UI/UX, Develop this skill more</p>
+                </label>
+                <label class="poorq7">
+                    <p id="poorq7" style="display:none ;"> Make sure the KPIs you pick are Attainable</p>
+                </label>
+
+
+
+            </div>
+
+            <div class="form-control">
+                <p>Projects' Dead Line </p>
+                <label class="excellentq8">
+                    <p id="excellentq8" style="display:none ;">You've an Excellent in Submitting projects On time, Keep
+                        Going</p>
+                </label>
+                <label class="goodq8">
+                    <p id="goodq8" style="display:none ;">You've a Good knowldege in Submitting projects On time,
+                        Develop this skill more</p>
+                </label>
+                <label class="poorq8">
+                    <p id="poorq8" style="display:none ;">Regularly review your workload, Keep a log of your work</p>
+                </label>
+
+
+
+            </div>
+
+            <div class="form-control">
+                <p>Coding best Practice</p>
+                <label class="excellentq9">
+                    <p id="excellentq9" style="display:none ;">You've an Excellent in using best practice ways, Keep
+                        Going</p>
+                </label>
+                <label class="goodq9">
+                    <p id="goodq9" style="display:none ;">You've a Good knowldege in using best practice ways, Develop
+                        this skill more</p>
+                </label>
+                <label class="poorq9">
+                    <p id="poorq9" style="display:none ;"> Do more than is required of you , speak up and share your
+                        ideas , think as a team member not an employee </p>
+                </label>
+
+            </div>
+        </div>
+
+        <button class="submit_B" type="submit" value="submit" onclick="clear()">
+            <a href="land.html" style="text-decoration: none; color :black">Log Out</a>
+        </button>
+
+
+
+    </form>
+
+    <!-- section footer -->
+    <footer class="site-footer">
+        ©️ 2022 Copyright Group 5
+    </footer>
+    <script src="js/report.js">
+
+
+
+
+
+    </script>
+</body>
+
+</html>
